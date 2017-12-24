@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Proyecto.Models.Ingreso>
+@{
+    ViewData["Title"] = "ListadoIngreso";
+}
+<h2>Lista de Ingreso</h2>
+<table class="table table-bordered table-hover">
+    <thead>
+    <th>Folio</th>
+    <th>Rut</th>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Cantidad</th>
+    <th>Tipo de Analisis</th>
+    <th>Fecha de Envio</th>
+    <th>Fecha de Muestreo</th>
+
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+
+            <tr>
+                <td>@Html.DisplayFor(m => p.Folio)</td>
+                <td>@Html.DisplayFor(m => p.Rut)</td>
+                <td>@Html.DisplayFor(m => p.Nombre)</td>
+                <td>@Html.DisplayFor(m => p.Apellido)</td>
+                <td>@Html.DisplayFor(m => p.Cantidad)</td>
+                <td>@Html.DisplayFor(m => p.TipoAnalisis)</td>
+                <td>@Html.DisplayFor(m => p.FechaEnvio)</td>
+                <td>@Html.DisplayFor(m => p.FechaMuestreo)</td>
+
+                <td>@Html.ActionLink("Eliminar", "EliminarIngreso", new { folio = p.Folio })</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,62 @@
+﻿@model Proyecto.Models.Cliente
+
+@{
+    ViewBag.Title = "Ficha";
+}
+<h2>Datos Cliente</h2>
+
+<fieldset class="form-horizontal">
+    <legend class="label">Informacion Cliente</legend>
+
+
+    <label class="control-label">ID del Cliente</label>
+    <div class="form-group">
+        <div class="label"> ID: </div><div class="text-muted">@Html.DisplayFor(m => m.Id)</div>
+
+    </div>
+    <label class="control-label">Rut</label>
+    <div class="form-group">
+        <div class="label"> Rut </div>
+        <div class="text-muted">@Html.DisplayFor(m => m.Rut)</div>
+    </div>
+    <label class="control-label">Nombre</label>
+    <div class="form-group">
+        <div class="label"> Nombre </div>
+        <div class="text-muted">@Html.DisplayFor(m => m.Nombre)</div>
+    </div>
+    <label class="control-label">Apellido</label>
+    <div class="form-group">
+        <div class="label"> Apellido </div>
+        <div class="text-muted">@Html.DisplayFor(m => m.Apellido)</div>
+    </div>
+    <label class="control-label">Ciudad</label>
+    <div class="form-group">
+        <div class="label"> Ciudad </div>
+        <div class="text-muted">@Html.DisplayFor(m => m.Ciudad)</div>
+    </div>
+    <label class="control-label">Telefono</label>
+    <div class="form-group">
+        <div class="label"> Telefono </div>
+        <div class="text-muted">@Html.DisplayFor(m => m.Telefono)</div>
+    </div>
+    <label class="control-label">Predio</label>
+    <div class="form-group">
+        <div class="label"> Predio </div>
+        <div class="text-muted">@Html.DisplayFor(m => m.Predio)</div>
+    </div>
+    <label class="control-label">Direccion</label>
+    <div class="form-group">
+        <div class="label"> Direccion </div>
+        <div class="text-muted">@Html.DisplayFor(m => m.Direccion)</div>
+    </div>
+    <label class="control-label">Email</label>
+    <div class="form-group">
+        <div class="label"> Email </div>
+        <div class="text-muted">@Html.DisplayFor(m => m.Email)</div>
+    </div>
+    <label class="control-label">Tipo</label>
+    <div class="form-group">
+        <div class="label"> Tipo </div>
+        <div class="text-muted">@Html.DisplayFor(m => m.Tipo)</div>
+    </div>
+</fieldset>
